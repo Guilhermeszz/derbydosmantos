@@ -1,0 +1,219 @@
+/* css background pattern */
+body{
+    font-size: 16px;
+    color: navajowhite;
+    font-family: Tahoma,sans-serif;
+    background-image: url(../Images/link4.jpg);
+    background-size: 1660px;
+} 
+
+
+hr{
+
+    color: black;
+    background-color: black;
+    height: 15px;
+}
+
+.gmaps{
+    padding: 5px;
+    background-color: #000000;
+    border: 1px solid #dbdbdb;
+}
+
+.textoo{
+    font-size: 16px;
+    color: navajowhite;
+    font-family: Tahoma,sans-serif;
+    background-image: url(../Images/link4.jpg);
+    background-size: 1660px;
+} 
+
+
+.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    background-color: #000000;
+    border: 1px solid #dbdbdb;
+}
+
+
+.btn {
+    border: 2px solid #4CAF50;
+    color: white;
+    background-color: #555555;
+    padding: 4px 8px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 12px 16px;
+    box-shadow: 0px 0px 8px #ff0;
+    text-decoration: none;
+}
+
+
+.btn-bt:hover {
+    color: #fff;
+    background-color: #f30;
+    border-color: #f30;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 12px 16px;
+    box-shadow: 0px 0px 8px #ff0;
+    text-decoration: none;
+    border: 2px solid #4CAF50;
+
+}
+
+
+.texto1{
+    color: gold;
+    font-size: 18px;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+
+
+.titulo {
+    font-size: 40px;
+    background-color: rgba(155,255,0,0.5);
+    padding: 5px;
+    text-align: center;
+    color: white;
+    font-family: 'Baloo Chettan', cursive;
+}
+
+.img-tamanho {
+    width: 600px;
+    height: 400px;
+}
+
+
+
+
+.botoes-items {
+    text-align:center;
+    margin: auto;
+    padding: 5px;
+}
+
+.botoes {
+    display:inline;
+    text-align: center;
+    float: left;
+}
+
+
+
+
+.text-item {
+   position: absolute;
+   left: 5%;
+   right: 5%;
+   bottom: 20px;
+   z-index: 10;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   color: #ffffff;
+   text-align: center;
+   font-weight: 700;
+   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+}
+
+.textoslider{
+    color: black;
+    font-size: 38px;
+    font-family: 'Baloo Chettan', cursive;
+}
+
+
+.labelnegrito {
+    font-size: 20px;
+    color: black;
+    font-family: 'Baloo Chettan', cursive;
+}
+
+
+
+.fconosco{
+    font-size: 42px;
+    color: black;
+    font-family: 'Baloo Chettan', cursive;
+}
+
+
+
+.itensmenu{
+    font-size: 20px;
+    color: black;
+
+}
+
+.itensmenu:hover{  
+    color: rgba(0,0,0,0.6);
+}
+
+
+
+.image img {
+    -webkit-transition: all 1s ease;
+    /* Safari and Chrome */
+    -moz-transition: all 1s ease;
+    /* Firefox */
+    -o-transition: all is ease;
+    /* IE 9 */
+    -ms-transition: all 1s ease;
+    /* Opera */
+    transition: all 1s ease;
+}
+
+.image:hover img {
+  -webkit-transform: scale(1.10);
+  /* Safari and Chrome */
+  -moz-transform: scale(1.10);
+  /* Firefox */
+  -ms-transform: scale(1.10);
+  /* IE 9 */
+  -o-transform: scale(1.10);
+  /* Opera */
+  transform: scale(1.10);
+}
+
+
+
+ 
+    
+
+
+.quadro .lupa {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #000;
+}
+
+
+
+.textodesc{
+    font-size: 28px;
+    color: black;
+    font-family: 'Baloo Chettan', cursive;
+}
+
+.botaoFinalizar {
+    display: inline;
+    width: 10%;
+    float: right;
+}
+
+
+
+
+
+
+
+
+

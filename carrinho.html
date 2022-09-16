@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    
+    
+    
+    <head>
+        
+        <title>Carrinho</title>
+        <meta charset="utf-8" />
+        
+        <!-- Meus estilos -->
+        <link type="text/css" rel="stylesheet" href="css/estilo.css" />
+        
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+        <!-- Font-awesome - icones -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+        
+        <!-- fonte do google -->
+        <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|PT+Sans" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet">
+        
+        <!-- bootstrao 0-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+        
+        <!-- Materialize -->
+        <link rel="stylesheet" href="css/materialize.css">
+        
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        
+        
+    </head>
+    
+    
+    
+    
+
+    <body>
+       
+        
+        <nav class="black">
+    <div class="nav-wrapper">
+      <a href="index.html"><i class="fas fa-home fa-3x"></i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a data-toggle="modal" data-target="#myModal"><i class="fas fa-user"> Minha conta</i></a></li>
+          <li><a href="carrinho.html" ><i class="fas fa-shopping-cart"> Meus Pedidos</i></a></li>
+      </ul>
+    </div>
+        </nav>
+    
+        
+
+          
+        <section>
+            <div class="container">
+                <h2><i class="fa fa-shopping-cart"></i> Itens
+                </h2>
+                
+                <div class="row">
+                    <div class="col-md-12">
+                        <table class="table table-striped table-hovered" id="tabela">
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th style='width:600px'>Nome</th>
+                                    <th style='width:300px'>Valor</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                            <tfoot> 
+                            </tfoot>
+                        </table>
+                    </div>
+                        <h5>Total</h5>
+                </div>
+                <button class="btn btn-danger botaoFinalizar" onclick="finalizar()">Finalizar</button>
+            </div>
+        </section>
+        
+        
+        
+        
+        <div class="modal fade" id="insere" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Cadastro de usuários</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id='form' onsubmit="return false">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label>Nome:</label>
+                                    <input type="text" class="form-control" id="txtNome" />
+                                </div>
+                                <div class="col-md-12">
+                                    <label>e-Mail:</label>
+                                    <input type="email" class="form-control" id="txtMail" />
+                                </div>
+                                <div class="col-md-12">
+                                    <label>Telefone:</label>
+                                    <input type="text" class="form-control" id="txtFone" />
+                                </div>
+                                <div class="col-md-12">
+                                    <label>Salário:</label>
+                                    <input type="text" class="form-control" id="txtSalario" />
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger btn-block" id="btAdd"><i class="fa fa-plus"></i> Adicionar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+       <br><br><br><br><br><br><br><br><br><br><br>
+        <hr/>
+        
+        
+        
+<div class="container ">   
+    <div class="row justify-content-md-left">
+        <div class="col-md-4">
+            <b class="fconosco">Menu</b><br><br>
+            <u><a href="produto.html" class="itensmenu" >Produtos</a></u><br>
+            
+        </div>
+    
+        <div class="col-md-4">
+            <b class="fconosco">Sobre Nós</b><br>
+            <i class="fas fa-phone"><u class="itensmenu"> Telefone:</u></i> <b>(11) 949590067</b><br>
+            <i class="fas fa-envelope"><u class="itensmenu"> Email:</u></i> <b>derbydosmantos@otlook.com</b>
+        </div>
+        
+    
+        <div class="col-md-4">
+            <a href="https://www.instagram.com/derbydosmantos/?igshid=YmMyMTA2M2Y%3D" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz_CKrQ6mGYXSWuNjnFpJiyqeN5mKTPJZz5rDJMAqaNw&s" class=" img-fluid hoverable  " width="55"/></a><b class="labelnegrito"> Instagram</b>
+        </div> 
+    </div>
+</div>
+        
+        
+        
+        
+        
+
+        <!-- Inicio Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+              <div class="modal-header">
+                <h4 class="modal-title text-center" id="myModalLabel">Login</h4>
+              </div>
+
+              <div class="modal-body">
+                <p>E-mail</p>
+                <input type="text" id="mailID"/>
+                
+                <p>Senha</p>
+                <input type="text" id="senhaID"/>
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" onclick="logar()" data-dismiss="modal">Login</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- Fim Modal -->
+        
+        
+        
+
+        
+        
+        <!-- js -->
+        <script type="text/javascript" src="js/materialize.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+
+        
+    <script>
+        function finalizar(){
+            alert("Compra Finalizada !");   
+        }
+    </script>
+        
+        
+
+    <script>
+        function logar(){
+            alert("Login Efetuado !");
+        }         
+    </script>
+        
+        
+        
+    <script>
+            $(document).ready(function() {
+            $('.modal').on('hidden.bs.modal', function() {
+            console.log('fechar modal')
+            $(this).find('input:text').val('');
+        });
+    });     
+     </script>
+        
+        
+        
+        
+    </body>  
+</html>
